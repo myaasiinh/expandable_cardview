@@ -39,7 +39,7 @@ ExpandableCard(
 
 ## Demos
 
-[Link ke Demo](https://github.com/myaasiinh/expandable_cardview/assets/54269175/a8681175-126e-4d80-9142-e07a038034ab)
+[Link ke Demo](https://github.com/myaasiinh/expandable_cardview/assets/54269175/1066471c-373c-459b-ad5e-4e2384a54d40)
 
 
 
