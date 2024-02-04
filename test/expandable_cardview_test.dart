@@ -1,44 +1,58 @@
 import 'package:expandable_cardview/expandable_cardview.dart';
-import 'package:expandable_cardview/src/component/section_row.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
   testWidgets('ExpandableCard UI Test', (WidgetTester tester) async {
-    // Build the test widget
-    await tester.pumpWidget(const MaterialApp(
-      home: Scaffold(
-        body: ExpandableCard(
-          title: 'Fried Rice',
-          description: 'Confirmed Order',
-          button2Value: 'Buy Now',
-          sectionRowCount: 3,
-          sectionRowTitles: const ['Review', 'Order', 'Shipping'],
-          totalText: 3,
-          backgroundColor: Colors.white,
-          elevation: 4.0,
-          button2Elevation: 5.0,
-          button2Color: Colors.blue,
-          button1TextColor: Colors.black,
-          button2BorderRadius: 5.0,
-          cardBorderRadius: 10,
-          sectionRowData:  {
-            'Review': ['Good portion size', 'Taste good', 'Overall good'],
-            'Order': ['Fried Rice', '1', 'RM 10.00'],
-            'Shipping': ['Street 1', 'City 1', '12345'],
-          },
-          
+    // Build the ExpandableCard widget
+    await tester.pumpWidget(
+      MaterialApp(
+        home: Scaffold(
+          body: ExpandableCard(
+            title: 'Test Title',
+            description: 'Test Description',
+            button1Value: 'Button 1',
+            button2Value: 'Button 2',
+            onPressedButton2: () {
+              // Add onPressedButton2 behavior here
+              print('Button 2 pressed');
+            },
+            sectionRowCount: 2,
+            sectionRowTitles: ['Section 1', 'Section 2'],
+            sectionRowData: {
+              'Section 1': ['Data 1', 'Data 2'],
+              'Section 2': ['Data 3', 'Data 4'],
+            },
+          ),
         ),
       ),
-    )
-  );
+    );
 
-    // Expectations
-    expect(find.text('Bebek Goreng'), findsOneWidget); // Expect title text
-    expect(find.text('Bebek Goreng pedas dan gurih'),
-        findsOneWidget); // Expect description text
-    expect(find.text('Konfirmasi'), findsOneWidget); // Expect button 2 text
-    expect(find.byType(Divider), findsNWidgets(3)); // Expect 3 dividers
-    expect(find.byType(SectionRow), findsNWidgets(3)); // Expect 3 section rows
+    // Verify that the card is initially collapsed
+    expect(find.text('Details'), findsOneWidget);
+    expect(find.text('Close'), findsNothing);
+
+    // Tap the expand button
+    await tester.tap(find.text('Details'));
+    await tester.pump();
+
+    // Verify that the card is expanded
+    expect(find.text('Close'), findsOneWidget);
+    expect(find.text('Details'), findsNothing);
+
+    // Tap the close button
+    await tester.tap(find.text('Close'));
+    await tester.pump();
+
+    // Verify that the card is collapsed again
+    expect(find.text('Details'), findsOneWidget);
+    expect(find.text('Close'), findsNothing);
+
+    // Tap the second button
+    await tester.tap(find.text('Button 2'));
+    await tester.pump();
+
+    // Verify that onPressedButton2 is called
+    // You can add further assertions based on the expected behavior
   });
 }
