@@ -1,6 +1,6 @@
 // ignore_for_file: use_key_in_widget_constructors
 
-import 'package:expandable_cardview/nested_expand_card.dart';
+import 'package:expandable_cardview/expandable_cardview.dart';
 import 'package:flutter/material.dart';
 
 void main() {

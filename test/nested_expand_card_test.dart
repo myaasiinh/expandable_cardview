@@ -1,7 +1,7 @@
 import 'package:expandable_cardview/src/component/section_row.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:expandable_cardview/nested_expand_card.dart';
+import 'package:expandable_cardview/expandable_cardview.dart';
 
 void main() {
   testWidgets('ExpandableCard UI Test', (WidgetTester tester) async {
