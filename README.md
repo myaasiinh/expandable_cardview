@@ -9,7 +9,7 @@ Untuk menggunakan `expandable_cardview`, tambahkan dependensi ini pada file `pub
 
 ```yaml
 dependencies:
-  expandable_cardview: ^1.0.0
+  expandable_cardview: ^1.0.2
 
 ```
 

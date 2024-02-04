@@ -1,4 +1,4 @@
-## 1.0.1
+## 1.0.2
 
 **Fitur Utama:**
 - Penambahan widget ExpandableCard yang memungkinkan pengguna untuk membuat kartu yang dapat diperluas dengan bagian yang dapat diperluas.
