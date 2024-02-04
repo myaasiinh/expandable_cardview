@@ -9,7 +9,7 @@ Untuk menggunakan `expandable_cardview`, tambahkan dependensi ini pada file `pub
 
 ```yaml
 dependencies:
-  expandable_cardview: ^1.0.3
+  expandable_cardview: ^1.0.4
 ```
 
 ### Import Library
@@ -47,7 +47,9 @@ ExpandableCard(
 
 ## Demos
 
-[Link ke Demo](https://github.com/myaasiinh/expandable_cardview/assets/54269175/1066471c-373c-459b-ad5e-4e2384a54d40)
+
+[Link ke Demo](https://github.com/myaasiinh/expandable_cardview/assets/54269175/12f8d34d-25f4-44f8-afbc-ad00a074e526)
+
 
 
 
