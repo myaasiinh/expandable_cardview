@@ -15,7 +15,7 @@ class ExpandableCard extends StatefulWidget {
   final String? title;
 
   /// The description of the card.
-  final String? deskripsi;
+  final String? description;
 
   /// The label for button 1.
   final String? button1Value;
@@ -69,7 +69,7 @@ class ExpandableCard extends StatefulWidget {
   const ExpandableCard({
     Key? key,
     this.title,
-    this.deskripsi,
+    this.description,
     this.button1Value,
     this.button2Value,
     required this.sectionRowCount,
@@ -120,7 +120,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
         children: [
           TitleDescriptionSection(
             title: widget.title,
-            deskripsi: widget.deskripsi,
+            deskripsi: widget.description,
           ),
           if (_isExpanded)
             Column(

@@ -12,7 +12,7 @@ To use `expandable_cardview`, add this dependency to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  expandable_cardview: ^1.0.7
+  expandable_cardview: ^1.0.8
 ```
 
 ### Import Library
@@ -25,7 +25,7 @@ import 'package:expandable_cardview/expandable_cardview.dart';
 ```dart
 ExpandableCard(
   title: 'Fried Rice',
-  deskripsi: 'Fried rice with chicken and egg',
+  description: 'Confirmed Order',
   button2Value: 'Buy Now',
   sectionRowCount: 3,
   sectionRowTitles: const ['Review', 'Order', 'Shipping'],
