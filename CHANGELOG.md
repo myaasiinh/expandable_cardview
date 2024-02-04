@@ -1,117 +1,128 @@
+## 1.0.7
+
+**Main feature:**
+- Added ExpandableCard widget that allows users to create expandable cards with expandable sections.
+- Supports extensive customization, including titles, descriptions, action buttons, and expandable sections with dynamic data.
+- Provides a clean and accessible interface to display detailed information in Flutter applications.
+
+**Changes and Updates:**
+- Changed the library demo example.
+- Changed documentation to English.
+
+**Bug Fix:**
+There are no bug fixes in this release.
+
+**Important Notes:**
+Be sure to check the documentation and usage examples in the README for usage and implementation guidance. Including changes regarding parameters and features that can be called on the card, please continue checking the source code section in the expandable_cardview.dart file.
+
 ## 1.0.6
 
-**Fitur Utama:**
-- Penambahan widget ExpandableCard yang memungkinkan pengguna untuk membuat kartu yang dapat diperluas dengan bagian yang dapat diperluas.
-- Mendukung penyesuaian yang luas, termasuk judul, deskripsi, tombol aksi, dan bagian yang dapat diperluas dengan data dinamis.
-- Menyediakan tampilan yang bersih dan mudah diakses untuk menampilkan informasi terperinci dalam aplikasi Flutter.
+**Main feature:**
+- Added ExpandableCard widget that allows users to create expandable cards with expandable sections.
+- Supports extensive customization, including titles, descriptions, action buttons, and expandable sections with dynamic data.
+- Provides a clean and easy-to-access interface for displaying detailed information in Flutter applications.
 
-**Perubahan dan Pembaruan:**
-- Refactor Description library to average
+**Changes and Updates:**
+- Refactor Description library to average.
 
-**Perbaikan Bug:**
-Tidak ada perbaikan bug pada rilis ini.
+**Bug Fix:**
+There are no bug fixes in this release.
 
-**Catatan Penting:**
-Pastikan untuk memeriksa dokumentasi dan contoh penggunaan di README untuk panduan penggunaan dan implementasi. Termasuk perubahan mengenai parameter dan fitur yang bisa dipanggil di kartu, mohon tetap periksa sumber kode bagian file expandable_cardview.dart
+**Important notes:**
+Be sure to check the documentation and usage examples in the README for usage and implementation guidance. Including changes regarding parameters and features that can be called on the card, please continue to check the source code section of the expandable_cardview.dart file.
 
 ## 1.0.5
 
-**Fitur Utama:**
-- Penambahan widget ExpandableCard yang memungkinkan pengguna untuk membuat kartu yang dapat diperluas dengan bagian yang dapat diperluas.
-- Mendukung penyesuaian yang luas, termasuk judul, deskripsi, tombol aksi, dan bagian yang dapat diperluas dengan data dinamis.
-- Menyediakan tampilan yang bersih dan mudah diakses untuk menampilkan informasi terperinci dalam aplikasi Flutter.
+**Main feature:**
+- Added ExpandableCard widget that allows users to create expandable cards with expandable sections.
+- Supports extensive customization, including titles, descriptions, action buttons, and expandable sections with dynamic data.
+- Provides a clean and easy-to-access interface for displaying detailed information in Flutter applications.
 
-**Perubahan dan Pembaruan:**
-- Refactor format style flutter
-- Refactor Description library to more detail
+**Changes and Updates:**
+- Refactor flutter style format
+- Refactor Description library to more detail.
 
-**Perbaikan Bug:**
-Tidak ada perbaikan bug pada rilis ini.
+**Bug Fix:**
+There are no bug fixes in this release.
 
-**Catatan Penting:**
-Pastikan untuk memeriksa dokumentasi dan contoh penggunaan di README untuk panduan penggunaan dan implementasi. Termasuk perubahan mengenai parameter dan fitur yang bisa dipanggil di kartu, mohon tetap periksa sumber kode bagian file expandable_cardview.dart
+**Important notes:**
+Be sure to check the documentation and usage examples in the README for usage and implementation guidance. Including changes regarding parameters and features that can be called on the card, please continue to check the source code section of the expandable_cardview.dart file.
 
 ## 1.0.4
 
-**Fitur Utama:**
-- Penambahan widget ExpandableCard yang memungkinkan pengguna untuk membuat kartu yang dapat diperluas dengan bagian yang dapat diperluas.
-- Mendukung penyesuaian yang luas, termasuk judul, deskripsi, tombol aksi, dan bagian yang dapat diperluas dengan data dinamis.
-- Menyediakan tampilan yang bersih dan mudah diakses untuk menampilkan informasi terperinci dalam aplikasi Flutter.
+**Main feature:**
+- Added ExpandableCard widget that allows users to create expandable cards with expandable sections.
+- Supports extensive customization, including titles, descriptions, action buttons, and expandable sections with dynamic data.
+- Provides a clean and easy-to-access interface for displaying detailed information in Flutter applications.
 
-**Perubahan dan Pembaruan:**
-- Refactor file demo video example library
+**Changes and Updates:**
+- Refactor the demo video example library file.
 
-**Perbaikan Bug:**
-Tidak ada perbaikan bug pada rilis ini.
+**Bug Fix:**
+There are no bug fixes in this release.
 
-**Catatan Penting:**
-Pastikan untuk memeriksa dokumentasi dan contoh penggunaan di README untuk panduan penggunaan dan implementasi. Termasuk perubahan mengenai parameter dan fitur yang bisa dipanggil di kartu, mohon tetap periksa sumber kode bagian file expandable_cardview.dart
+**Important Notes:**
+Be sure to check the documentation and usage examples in the README for usage and implementation guidance. Including changes regarding parameters and features that can be called on the card, please continue to check the source code section of the expandable_cardview.dart file.
 
 ## 1.0.3
 
-**Fitur Utama:**
-- Penambahan widget ExpandableCard yang memungkinkan pengguna untuk membuat kartu yang dapat diperluas dengan bagian yang dapat diperluas.
-- Mendukung penyesuaian yang luas, termasuk judul, deskripsi, tombol aksi, dan bagian yang dapat diperluas dengan data dinamis.
-- Menyediakan tampilan yang bersih dan mudah diakses untuk menampilkan informasi terperinci dalam aplikasi Flutter.
+**Main feature:**
+- Added ExpandableCard widget that allows users to create expandable cards with expandable sections.
+- Supports extensive customization, including titles, descriptions, action buttons, and expandable sections with dynamic data.
+- Provides a clean and easy-to-access interface for displaying detailed information in Flutter applications.
 
-**Perubahan dan Pembaruan:**
-- Tambahkan Parameter Button 2 agar bisa diklick untuk di  isi perintah lain di dalam kartu tersebut saat dipanggil
+**Changes and Updates:**
+- Add Parameter Button 2 so that it can be clicked to fill in other commands on the card when called.
 
-**Perbaikan Bug:**
-Tidak ada perbaikan bug pada rilis ini.
+**Bug Fix:**
+There are no bug fixes in this release.
 
-**Catatan Penting:**
-Pastikan untuk memeriksa dokumentasi dan contoh penggunaan di README untuk panduan penggunaan dan implementasi. Termasuk perubahan mengenai parameter dan fitur yang bisa dipanggil di kartu, mohon tetap periksa sumber kode bagian file expandable_cardview.dart
+**Important Notes:**
+Be sure to check the documentation and usage examples in the README for usage and implementation guidance. Including changes regarding parameters and features that can be called on the card, please continue to check the source code section of the expandable_cardview.dart file.
 
 ## 1.0.2
 
-**Fitur Utama:**
-- Penambahan widget ExpandableCard yang memungkinkan pengguna untuk membuat kartu yang dapat diperluas dengan bagian yang dapat diperluas.
-- Mendukung penyesuaian yang luas, termasuk judul, deskripsi, tombol aksi, dan bagian yang dapat diperluas dengan data dinamis.
-- Menyediakan tampilan yang bersih dan mudah diakses untuk menampilkan informasi terperinci dalam aplikasi Flutter.
+**Main feature:**
+- Added ExpandableCard widget that allows users to create expandable cards with expandable sections.
+- Supports extensive customization, including titles, descriptions, action buttons, and expandable sections with dynamic data.
+- Provides a clean and easy-to-access interface for displaying detailed information in Flutter applications.
 
-**Perubahan dan Pembaruan:**
-- Pembaharuan Dokumentasi
+**Changes and Updates:**
+- Documentation Update.
 
-**Perbaikan Bug:**
-Tidak ada perbaikan bug pada rilis ini.
+**Bug Fix:**
+There are no bug fixes in this release.
 
-**Catatan Penting:**
-Pastikan untuk memeriksa dokumentasi dan contoh penggunaan di README untuk panduan penggunaan dan implementasi.
-
+**Vital Records:**
+Be sure to check the documentation and usage examples in the README for usage and implementation guidance.
 ## 1.0.1
 
-**Fitur Utama:**
-- Penambahan widget ExpandableCard yang memungkinkan pengguna untuk membuat kartu yang dapat diperluas dengan bagian yang dapat diperluas.
-- Mendukung penyesuaian yang luas, termasuk judul, deskripsi, tombol aksi, dan bagian yang dapat diperluas dengan data dinamis.
-- Menyediakan tampilan yang bersih dan mudah diakses untuk menampilkan informasi terperinci dalam aplikasi Flutter.
+**Main feature:**
+- Added ExpandableCard widget that allows users to create expandable cards with expandable sections.
+- Supports extensive customization, including titles, descriptions, action buttons, and expandable sections with dynamic data.
+- Provides a clean and easy-to-access interface for displaying detailed information in Flutter applications.
 
-**Perubahan dan Pembaruan:**
-- Pembaharuan Demo dan Dokumentasi
+**Changes and Updates:**
+- Demo and Documentation Updates.
 
-**Perbaikan Bug:**
-Tidak ada perbaikan bug pada rilis ini.
+**Bug Fix:**
+There are no bug fixes in this release.
 
-**Catatan Penting:**
-Pastikan untuk memeriksa dokumentasi dan contoh penggunaan di README untuk panduan penggunaan dan implementasi.
+**Important Notes:**
+Be sure to check the documentation and usage examples in the README for usage and implementation guidance.
 
 ## 1.0.0
 
-**Fitur Utama:**
-- Penambahan widget ExpandableCard yang memungkinkan pengguna untuk membuat kartu yang dapat diperluas dengan bagian yang dapat diperluas.
-- Mendukung penyesuaian yang luas, termasuk judul, deskripsi, tombol aksi, dan bagian yang dapat diperluas dengan data dinamis.
-- Menyediakan tampilan yang bersih dan mudah diakses untuk menampilkan informasi terperinci dalam aplikasi Flutter.
+**Main feature:**
+- Added ExpandableCard widget that allows users to create expandable cards with expandable sections.
+- Supports extensive customization, including titles, descriptions, action buttons, and expandable sections with dynamic data.
+- Provides a clean and easy-to-access interface for displaying detailed information in Flutter applications.
 
-**Perubahan dan Pembaruan:**
-- Pembaharuan Demo dan Dokumentasi
+**Changes and Updates:**
+- Demo and Documentation Updates.
 
-**Perbaikan Bug:**
-Tidak ada perbaikan bug pada rilis ini.
+**Bug Fix:**
+There are no bug fixes in this release.
 
-**Catatan Penting:**
-Pastikan untuk memeriksa dokumentasi dan contoh penggunaan di README untuk panduan penggunaan dan implementasi.
-
-
-
-
-
+**Important Notes:**
+Be sure to check the documentation and usage examples in the README for usage and implementation guidance.

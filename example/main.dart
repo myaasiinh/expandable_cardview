@@ -2,7 +2,6 @@
 
 import 'package:expandable_cardview/expandable_cardview.dart';
 import 'package:flutter/material.dart';
-
 import 'detail_page.dart';
 
 
@@ -32,11 +31,11 @@ class MyHomePage extends StatelessWidget {
             itemCount: 10,
             itemBuilder: (context, index) {
               return ExpandableCard(
-                title: 'Bebek Goreng',
-                deskripsi: 'Bebek Goreng pedas dan gurih',
-                button2Value: 'Konfirmasi',
+                title: 'Fried Rice',
+                deskripsi: 'Fried rice with chicken and egg',
+                button2Value: 'Buy Now',
                 sectionRowCount: 3,
-                sectionRowTitles: const ['Ulasan', 'Pesanan', 'Ongkir'],
+                sectionRowTitles: const ['Review', 'Order', 'Shipping'],
                 totalText: 3,
                 backgroundColor: Colors.white,
                 elevation: 4.0,
@@ -46,13 +45,13 @@ class MyHomePage extends StatelessWidget {
                 button2BorderRadius: 5.0,
                 cardBorderRadius: 10,
                 sectionRowData: const {
-                  'Ulasan': [
-                    'Rating bagus',
-                    'Makanan sedap',
-                    'Order lagi besok'
+                  'Review': [
+                    'Good portion size',
+                    'Taste good',
+                    'Overall good'
                   ],
-                  'Pesanan': ['Jumbo', 'Pedas', 'Ga pake nasi'],
-                  'Ongkir': ['Genuk', 'Jalan Mrican no 2', 'kodepos 0164'],
+                  'Order': ['Fried Rice', '1', 'RM 10.00'],
+                  'Shipping': ['Street 1', 'City 1', '12345'],
                 },
                 onPressedButton2: () {
                   showMovePage(context);
@@ -70,8 +69,8 @@ class MyHomePage extends StatelessWidget {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: const Text('Konfirmasi'),
-          content: const Text('Apakah Anda yakin ingin memindahkan halaman?'),
+          title: const Text('Confirm'),
+          content: const Text('Are you sure you want to move the payment page?'),
           actions: <Widget>[
             TextButton(
               onPressed: () {
@@ -89,7 +88,7 @@ class MyHomePage extends StatelessWidget {
                 print('Cancel button pressed');
                 Navigator.of(context).pop();
               },
-              child: const Text('Batal'),
+              child: const Text('Cancel'),
             ),
           ],
         );

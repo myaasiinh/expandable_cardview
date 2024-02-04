@@ -162,7 +162,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
               ExpandCollapseButton(
                 isExpanded: _isExpanded,
                 onPressed: _toggleSection,
-                buttonText: _isExpanded ? 'Tutup' : 'Detail',
+                buttonText: _isExpanded ? 'Close' : 'Details',
                 textColor: widget.button1TextColor,
                 buttonBorderRadius: widget.button1BorderRadius,
               ),
