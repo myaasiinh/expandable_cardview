@@ -23,6 +23,9 @@ class ExpandableCard extends StatefulWidget {
   /// The label for button 2.
   final String? button2Value;
 
+  /// Fungsi callback ketika button2 ditekan.
+  final VoidCallback? onPressedButton2;
+
   /// The number of section rows.
   final int sectionRowCount;
 
@@ -53,6 +56,8 @@ class ExpandableCard extends StatefulWidget {
   /// The border radius of button 2.
   final double? button2BorderRadius;
 
+
+
   /// The border radius of the card.
   final double? cardBorderRadius;
 
@@ -76,6 +81,7 @@ class ExpandableCard extends StatefulWidget {
     this.elevation,
     this.button2Elevation,
     this.button2Color,
+    this.onPressedButton2,
     this.button1TextColor,
     this.button1BorderRadius,
     this.button2BorderRadius,
@@ -165,7 +171,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
               Padding(
                 padding: const EdgeInsets.only(right: 16, top: 10),
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: widget.onPressedButton2,
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all<Color>(
                       widget.button2Color ?? Colors.blue,

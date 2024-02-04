@@ -9,8 +9,13 @@ Untuk menggunakan `expandable_cardview`, tambahkan dependensi ini pada file `pub
 
 ```yaml
 dependencies:
-  expandable_cardview: ^1.0.2
+  expandable_cardview: ^1.0.3
+```
 
+### Import Library
+
+```yaml
+import 'package:expandable_cardview/expandable_cardview.dart';
 ```
 
 ### Usage
@@ -33,6 +38,9 @@ ExpandableCard(
     'Ulasan': ['Rating bagus', 'Makanan sedap', 'Order lagi besok'],
     'Pesanan': ['Jumbo', 'Pedas', 'Ga pake nasi'],
     'Ongkir': ['Genuk', 'Jalan Mrican no 2', 'kodepos 0164'],
+  },
+  onPressedButton2: () {
+    // do something calling from custom method or action
   },
 )
 ```

@@ -1,7 +1,10 @@
-// ignore_for_file: use_key_in_widget_constructors
+// ignore_for_file: avoid_print, use_key_in_widget_constructors
 
 import 'package:expandable_cardview/expandable_cardview.dart';
 import 'package:flutter/material.dart';
+
+import 'detail_page.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -11,64 +14,86 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Expandable Card Example'),
-        ),
-        body: const SingleChildScrollView(
-          child: Padding(
-            padding: EdgeInsets.all(8.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                // Example of using ExpandableCard widget
-                ExpandableCard(
-                  title: 'Bebek Goreng', // Title of the card
-                  deskripsi: 'Bebek Goreng pedas dan gurih', // Description of the card
-                  button2Value: 'Konfirmasi', // Label for button 2
-                  sectionRowCount: 3, // Number of section rows
-                  sectionRowTitles: ['Ulasan', 'Pesanan', 'Ongkir'], // Titles for each section row
-                  totalText: 3, // Total text count
-                  backgroundColor: Colors.white, // Background color of the card
-                  elevation: 4.0, // Elevation of the card
-                  button2Elevation: 5.0, // Elevation of button 2
-                  button2Color: Colors.blue, // Color of button 2
-                  button1TextColor: Colors.black, // Text color of button 1
-                  button2BorderRadius: 5.0, // Border radius of button 2
-                  cardBorderRadius: 10, // Border radius of the card
-                  sectionRowData: {
-                    'Ulasan': ['Rating bagus', 'Makanan sedap', 'Order lagi besok'], // Data for Ulasan section
-                    'Pesanan': ['Jumbo', 'Pedas', 'Ga pake nasi'], // Data for Pesanan section
-                    'Ongkir': ['Genuk', 'Jalan Mrican no 2', 'kodepos 0164'], // Data for Ongkir section
-                  },
-                ),
-                SizedBox(height: 16), // Spacer widget for additional spacing
-                // Another example of using ExpandableCard widget
-                ExpandableCard(
-                  title: 'Ayam Goreng', // Title of the card
-                  deskripsi: 'Ayam Goreng pedas dan gurih', // Description of the card
-                  button2Value: 'Konfirmasi', // Label for button 2
-                  sectionRowCount: 3, // Number of section rows
-                  sectionRowTitles: ['Ulasan', 'Pesanan', 'Ongkir'], // Titles for each section row
-                  totalText: 3, // Total text count
-                  backgroundColor: Colors.white, // Background color of the card
-                  elevation: 4.0, // Elevation of the card
-                  button2Elevation: 5.0, // Elevation of button 2
-                  button2Color: Colors.blue, // Color of button 2
-                  button1TextColor: Colors.black, // Text color of button 1
-                  button2BorderRadius: 5.0, // Border radius of button 2
-                  cardBorderRadius: 10, // Border radius of the card
-                  sectionRowData: {
-                    'Ulasan': ['Rating bagus', 'Makanan sedap', 'Order lagi besok'], // Data for Ulasan section
-                    'Pesanan': ['Jumbo', 'Pedas', 'Ga pake nasi'], // Data for Pesanan section
-                    'Ongkir': ['Genuk', 'Jalan Mrican no 2', 'kodepos 0164'], // Data for Ongkir section
-                  },
-                ),
-              ],
-            ),
-          ),
-        ),
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Expandable Card Example'),
       ),
+      body: Padding(
+        padding: const EdgeInsets.all(16),
+        child: ListView.builder(
+            itemCount: 10,
+            itemBuilder: (context, index) {
+              return ExpandableCard(
+                title: 'Bebek Goreng',
+                deskripsi: 'Bebek Goreng pedas dan gurih',
+                button2Value: 'Konfirmasi',
+                sectionRowCount: 3,
+                sectionRowTitles: const ['Ulasan', 'Pesanan', 'Ongkir'],
+                totalText: 3,
+                backgroundColor: Colors.white,
+                elevation: 4.0,
+                button2Elevation: 5.0,
+                button2Color: Colors.blue,
+                button1TextColor: Colors.black,
+                button2BorderRadius: 5.0,
+                cardBorderRadius: 10,
+                sectionRowData: const {
+                  'Ulasan': [
+                    'Rating bagus',
+                    'Makanan sedap',
+                    'Order lagi besok'
+                  ],
+                  'Pesanan': ['Jumbo', 'Pedas', 'Ga pake nasi'],
+                  'Ongkir': ['Genuk', 'Jalan Mrican no 2', 'kodepos 0164'],
+                },
+                onPressedButton2: () {
+                  showMovePage(context);
+                },
+              );
+            },
+          ),
+      ),
+    );
+  }
+
+  void showMovePage(BuildContext context) {
+    // Implementasi dialog atau navigasi ke halaman lain di sini
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Konfirmasi'),
+          content: const Text('Apakah Anda yakin ingin memindahkan halaman?'),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () {
+                print('OK button pressed');
+                //move to detail page
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const DetailPage()),
+                );
+              },
+              child: const Text('OK'),
+            ),
+            TextButton(
+              onPressed: () {
+                print('Cancel button pressed');
+                Navigator.of(context).pop();
+              },
+              child: const Text('Batal'),
+            ),
+          ],
+        );
+      },
     );
   }
 }
