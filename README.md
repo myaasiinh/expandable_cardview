@@ -39,7 +39,7 @@ ExpandableCard(
 
 ## Demos
 
-[Link ke Gambar](https://github.com/myaasiinh/expandable_cardview/assets/54269175/a8681175-126e-4d80-9142-e07a038034ab)
+[Link ke Demo](https://github.com/myaasiinh/expandable_cardview/assets/54269175/1066471c-373c-459b-ad5e-4e2384a54d40)
 
 
 
@@ -53,7 +53,7 @@ ExpandableCard(
 📫 How to reach me: myaasiinh@gmail.com
 
 
-[pubdev]: https://pub.dev/packages/expandablecard
+[pubdev]: https://pub.dev/packages/expandable_cardview
 [web flutter]: https://flutter.dev
 [github account]: https://myaasiinh.github.io
 [Ko-fi account]: https://ko-fi.com/myaasiinh
