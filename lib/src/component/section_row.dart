@@ -25,7 +25,10 @@ class SectionRow extends StatelessWidget {
       title: Text(title), // Display the title text
       trailing: IconButton(
         onPressed: onTap, // Execute onTap callback when button is pressed
-        icon: Icon(isExpanded ? Icons.keyboard_arrow_up : Icons.keyboard_arrow_down), // Display appropriate icon based on expanded state
+        icon: Icon(isExpanded
+            ? Icons.keyboard_arrow_up
+            : Icons
+                .keyboard_arrow_down), // Display appropriate icon based on expanded state
       ),
     );
   }

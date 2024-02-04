@@ -56,8 +56,6 @@ class ExpandableCard extends StatefulWidget {
   /// The border radius of button 2.
   final double? button2BorderRadius;
 
-
-
   /// The border radius of the card.
   final double? cardBorderRadius;
 

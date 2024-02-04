@@ -34,7 +34,8 @@ class TitleDescriptionSection extends StatelessWidget {
         // Description text widget with padding
         Padding(
           padding: const EdgeInsets.only(left: 12, top: 10),
-          child: Text(deskripsi ?? ''), // Display description text or empty string if null
+          child: Text(deskripsi ??
+              ''), // Display description text or empty string if null
         ),
         const SizedBox(height: 16), // Spacer widget for additional spacing
       ],

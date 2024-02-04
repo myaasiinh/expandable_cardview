@@ -1,7 +1,7 @@
 ## Expandable Card Widget Library
 
 ### Description
-The `ExpandableCard` widget provides a customizable card with expandable sections. It allows users to display detailed information in collapsible sections.
+The `ExpandableCard` widget provides a customizable card with expandable sections, facilitating the display of detailed information in collapsible sections. Ideal for presenting complex content within a compact UI.
 
 ### Add Dependency
 
@@ -9,7 +9,7 @@ Untuk menggunakan `expandable_cardview`, tambahkan dependensi ini pada file `pub
 
 ```yaml
 dependencies:
-  expandable_cardview: ^1.0.4
+  expandable_cardview: ^1.0.5
 ```
 
 ### Import Library

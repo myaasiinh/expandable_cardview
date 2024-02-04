@@ -40,7 +40,8 @@ class ExpandCollapseButton extends StatelessWidget {
       style: ButtonStyle(
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(buttonBorderRadius ?? 0), // Apply custom border radius or default to 0
+            borderRadius: BorderRadius.circular(buttonBorderRadius ??
+                0), // Apply custom border radius or default to 0
           ),
         ),
       ),

@@ -18,10 +18,12 @@ class DetailSection extends StatelessWidget {
     return Container(
       width: double.infinity, // Expand to fill available width
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start, // Align children to the start of the column
+        crossAxisAlignment: CrossAxisAlignment
+            .start, // Align children to the start of the column
         children: List.generate(detailData.length, (index) {
           return Padding(
-            padding: const EdgeInsets.symmetric(vertical: 8.0), // Add vertical padding
+            padding: const EdgeInsets.symmetric(
+                vertical: 8.0), // Add vertical padding
             child: Padding(
               padding: const EdgeInsets.only(left: 16), // Add left padding
               child: Text(detailData[index]), // Display detail data text

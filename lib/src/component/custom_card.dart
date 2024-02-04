@@ -33,10 +33,12 @@ class CustomCard extends StatelessWidget {
       color: backgroundColor, // Set custom background color
       elevation: elevation, // Set custom elevation
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(cardBorderRadius ?? 0), // Apply custom border radius or default to 0
+        borderRadius: BorderRadius.circular(cardBorderRadius ??
+            0), // Apply custom border radius or default to 0
       ),
       child: Padding(
-        padding: padding ?? EdgeInsets.zero, // Apply custom padding or default to zero padding
+        padding: padding ??
+            EdgeInsets.zero, // Apply custom padding or default to zero padding
         child: child, // Display the child widget inside the card
       ),
     );
