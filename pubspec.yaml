@@ -1,6 +1,6 @@
 name: expandable_cardview
-description: The ExpandableCard widget provides a customizable card with expandable sections, facilitating the display of detailed information in collapsible sections. Ideal for presenting complex content within a compact UI.
-version: 1.0.5
+description: The ExpandableCard widget provides a customizable card with expandable sections, facilitating the display of detailed information in collapsible sections. 
+version: 1.0.6
 repository: https://github.com/myaasiinh/expandable_cardview
 issue_tracker: https://github.com/myaasiinh/expandable_cardview/issues
 maintainer: myaasiinh (@myaasiinh)
