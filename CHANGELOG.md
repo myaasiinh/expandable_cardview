@@ -1,3 +1,19 @@
+## 1.0.9
+
+**Main feature:**
+- Added ExpandableCard widget that allows users to create expandable cards with expandable sections.
+- Supports extensive customization, including titles, descriptions, action buttons, and expandable sections with dynamic data.
+- Provides a clean and accessible interface to display detailed information in Flutter applications.
+
+**Changes and Updates:**
+- Changed documentation title link to demos to English.
+
+**Bug Fix:**
+There are no bug fixes in this release.
+
+**Important Notes:**
+Be sure to check the documentation and usage examples in the README for usage and implementation guidance. Including changes regarding parameters and features that can be called on the card, please continue checking the source code section in the expandable_cardview.dart file.
+
 ## 1.0.8
 
 **Main feature:**

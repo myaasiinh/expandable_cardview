@@ -12,7 +12,7 @@ To use `expandable_cardview`, add this dependency to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  expandable_cardview: ^1.0.8
+  expandable_cardview: ^1.0.9
 ```
 
 ### Import Library
@@ -51,7 +51,7 @@ ExpandableCard(
 ## Demos
 
 
-[Link ke Demo](https://github.com/myaasiinh/expandable_cardview/assets/54269175/d942b65c-8236-4fa4-8b82-08a339e3c560)
+[Check out the demo video through this link](https://github.com/myaasiinh/expandable_cardview/assets/54269175/d942b65c-8236-4fa4-8b82-08a339e3c560)
 
 
 
