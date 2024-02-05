@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print, prefer_const_literals_to_create_immutables
+
 import 'package:expandable_cardview/expandable_cardview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
