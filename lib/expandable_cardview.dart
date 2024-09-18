@@ -1,4 +1,4 @@
-// ignore_for_file: library_private_types_in_public_api, prefer_const_constructors
+// ignore_for_file: library_private_types_in_public_api
 
 library nested_expandable_cardview;
 
@@ -23,7 +23,13 @@ class ExpandableCard extends StatefulWidget {
   /// The label for button 2.
   final String? button2Value;
 
-  /// Fungsi callback ketika button2 ditekan.
+  /// The text for the 'Close' button.
+  final String textButtonActionFirst;
+
+  /// The text for the 'Details' button.
+  final String textButtonActionSecond;
+
+  /// Callback function when button2 is pressed.
   final VoidCallback? onPressedButton2;
 
   /// The number of section rows.
@@ -72,6 +78,8 @@ class ExpandableCard extends StatefulWidget {
     this.description,
     this.button1Value,
     this.button2Value,
+    required this.textButtonActionFirst,  // Default text
+    required this.textButtonActionSecond,  // Default text
     required this.sectionRowCount,
     required this.sectionRowTitles,
     this.totalText,
@@ -127,9 +135,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
               children: List.generate(widget.sectionRowCount, (index) {
                 return Column(
                   children: [
-                    const Divider(
-                      height: 0,
-                    ), // Divider before each sectionRow
+                    const Divider(height: 0), 
                     SectionRow(
                       title: widget.sectionRowTitles[index],
                       isExpanded: _expandedSectionIndex == index,
@@ -138,20 +144,13 @@ class _ExpandableCardState extends State<ExpandableCard> {
                       },
                     ),
                     if (_expandedSectionIndex == index)
-                      const Divider(
-                        height: 0,
-                      ), // Divider before DetailSection
+                      const Divider(height: 0),
                     if (_expandedSectionIndex == index)
                       DetailSection(
-                        detailData: widget.sectionRowData[
-                                widget.sectionRowTitles[index]] ??
-                            [],
+                        detailData: widget.sectionRowData[widget.sectionRowTitles[index]] ?? [],
                       ),
-                    if (_expandedSectionIndex == index ||
-                        index == widget.sectionRowCount - 1)
-                      const Divider(
-                        height: 0,
-                      ), // Divider before button1 and button2
+                    if (_expandedSectionIndex == index || index == widget.sectionRowCount - 1)
+                      const Divider(height: 0),
                   ],
                 );
               }),
@@ -162,7 +161,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
               ExpandCollapseButton(
                 isExpanded: _isExpanded,
                 onPressed: _toggleSection,
-                buttonText: _isExpanded ? 'Close' : 'Details',
+                buttonText: _isExpanded ? widget.textButtonActionSecond : widget.textButtonActionFirst,
                 textColor: widget.button1TextColor,
                 buttonBorderRadius: widget.button1BorderRadius,
               ),
@@ -171,13 +170,13 @@ class _ExpandableCardState extends State<ExpandableCard> {
                 child: ElevatedButton(
                   onPressed: widget.onPressedButton2,
                   style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all<Color>(
+                    backgroundColor: WidgetStateProperty.all<Color>(
                       widget.button2Color ?? Colors.blue,
                     ),
-                    elevation: MaterialStateProperty.all<double>(
+                    elevation: WidgetStateProperty.all<double>(
                       widget.button2Elevation ?? 0,
                     ),
-                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                    shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(
                           widget.button2BorderRadius ?? 0,
@@ -187,7 +186,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
                   ),
                   child: Text(
                     widget.button2Value ?? '',
-                    style: TextStyle(color: Colors.white),
+                    style: const TextStyle(color: Colors.white),
                   ),
                 ),
               ),

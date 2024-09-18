@@ -1,3 +1,9 @@
+## 1.1.0
+
+**Main feature:**
+- Improved textButtonActionSecond & textButtonActionFirst to set manual custom value from parameter.
+- Fix change deprecated from material state property
+
 ## 1.0.9
 
 **Main feature:**

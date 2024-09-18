@@ -30,6 +30,8 @@ class MyHomePage extends StatelessWidget {
           itemCount: 10,
           itemBuilder: (context, index) {
             return ExpandableCard(
+              textButtonActionFirst: 'Close',
+              textButtonActionSecond: 'Details',
               title: 'Fried Rice',
               description: 'Confirmed Order',
               button2Value: 'Buy Now',

@@ -11,6 +11,8 @@ void main() {
       MaterialApp(
         home: Scaffold(
           body: ExpandableCard(
+            textButtonActionFirst: 'Close',
+            textButtonActionSecond: 'Details',
             title: 'Test Title',
             description: 'Test Description',
             button1Value: 'Button 1',

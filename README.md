@@ -12,7 +12,7 @@ To use `expandable_cardview`, add this dependency to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  expandable_cardview: ^1.0.9
+  expandable_cardview: ^1.1.0
 ```
 
 ### Import Library
@@ -42,6 +42,8 @@ ExpandableCard(
   'Order': ['Fried Rice', '1', 'RM 10.00'],
   'Shipping': ['Street 1', 'City 1', '12345'],
   },
+  textButtonActionFirst: 'Close',
+  textButtonActionSecond: 'Details',
   onPressedButton2: () {
       //do something
   },
