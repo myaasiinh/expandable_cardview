@@ -1,3 +1,21 @@
+## 1.2.0
+
+**Main feature:**
+- Refactored entire codebase for cleaner folder structure and standard naming conventions.
+- Renamed `lib/src/component` directory to `lib/src/components`.
+- Renamed variables in `ExpandableCard` to be more descriptive and semantic:
+  - Removed unused `button1Value`.
+  - `button2Value` renamed to `actionButtonText`.
+  - `onPressedButton2` renamed to `onActionButtonPressed`.
+  - `textButtonActionFirst` renamed to `collapsedButtonText`.
+  - `textButtonActionSecond` renamed to `expandedButtonText`.
+  - `button2Elevation` renamed to `actionButtonElevation`.
+  - `button2Color` renamed to `actionButtonColor`.
+  - `button1TextColor` renamed to `expandCollapseButtonTextColor`.
+  - `button1BorderRadius` renamed to `expandCollapseButtonBorderRadius`.
+  - `button2BorderRadius` renamed to `actionButtonBorderRadius`.
+- Standardized internal parameter naming (e.g. `deskripsi` to `description`).
+
 ## 1.1.0
 
 **Main feature:**

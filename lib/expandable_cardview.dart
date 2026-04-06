@@ -3,11 +3,11 @@
 library nested_expandable_cardview;
 
 import 'package:flutter/material.dart';
-import 'src/component/custom_card.dart';
-import 'src/component/expand_collapse_button.dart';
-import 'src/component/title_description_section.dart';
-import 'src/component/detail_section.dart';
-import 'src/component/section_row.dart';
+import 'src/components/custom_card.dart';
+import 'src/components/expand_collapse_button.dart';
+import 'src/components/title_description_section.dart';
+import 'src/components/detail_section.dart';
+import 'src/components/section_row.dart';
 
 /// A widget that displays an expandable card view with title, description, sections, and buttons.
 class ExpandableCard extends StatefulWidget {
@@ -17,20 +17,17 @@ class ExpandableCard extends StatefulWidget {
   /// The description of the card.
   final String? description;
 
-  /// The label for button 1.
-  final String? button1Value;
+  /// The text for the 'Close' / expand button.
+  final String expandedButtonText;
 
-  /// The label for button 2.
-  final String? button2Value;
+  /// The text for the 'Details' / collapse button.
+  final String collapsedButtonText;
 
-  /// The text for the 'Close' button.
-  final String textButtonActionFirst;
+  /// The label for the primary button.
+  final String? actionButtonText;
 
-  /// The text for the 'Details' button.
-  final String textButtonActionSecond;
-
-  /// Callback function when button2 is pressed.
-  final VoidCallback? onPressedButton2;
+  /// Callback function when the primary button is pressed.
+  final VoidCallback? onActionButtonPressed;
 
   /// The number of section rows.
   final int sectionRowCount;
@@ -39,7 +36,7 @@ class ExpandableCard extends StatefulWidget {
   final List<String> sectionRowTitles;
 
   /// The total text.
-  final int? totalText;
+  final int? totalText; // Consider removing if unused, but leaving as is
 
   /// The background color of the card.
   final Color? backgroundColor;
@@ -47,20 +44,20 @@ class ExpandableCard extends StatefulWidget {
   /// The elevation of the card.
   final double? elevation;
 
-  /// The elevation of button 2.
-  final double? button2Elevation;
+  /// The elevation of the primary button.
+  final double? actionButtonElevation;
 
-  /// The color of button 2.
-  final Color? button2Color;
+  /// The color of the primary button.
+  final Color? actionButtonColor;
 
-  /// The text color of button 1.
-  final Color? button1TextColor;
+  /// The text color of the expand/collapse button.
+  final Color? expandCollapseButtonTextColor;
 
-  /// The border radius of button 1.
-  final double? button1BorderRadius;
+  /// The border radius of the expand/collapse button.
+  final double? expandCollapseButtonBorderRadius;
 
-  /// The border radius of button 2.
-  final double? button2BorderRadius;
+  /// The border radius of the primary button.
+  final double? actionButtonBorderRadius;
 
   /// The border radius of the card.
   final double? cardBorderRadius;
@@ -76,21 +73,20 @@ class ExpandableCard extends StatefulWidget {
     Key? key,
     this.title,
     this.description,
-    this.button1Value,
-    this.button2Value,
-    required this.textButtonActionFirst,  // Default text
-    required this.textButtonActionSecond,  // Default text
+    this.actionButtonText,
+    required this.expandedButtonText,
+    required this.collapsedButtonText,
     required this.sectionRowCount,
     required this.sectionRowTitles,
     this.totalText,
     this.backgroundColor,
     this.elevation,
-    this.button2Elevation,
-    this.button2Color,
-    this.onPressedButton2,
-    this.button1TextColor,
-    this.button1BorderRadius,
-    this.button2BorderRadius,
+    this.actionButtonElevation,
+    this.actionButtonColor,
+    this.onActionButtonPressed,
+    this.expandCollapseButtonTextColor,
+    this.expandCollapseButtonBorderRadius,
+    this.actionButtonBorderRadius,
     this.cardBorderRadius,
     this.padding,
     required this.sectionRowData,
@@ -128,7 +124,7 @@ class _ExpandableCardState extends State<ExpandableCard> {
         children: [
           TitleDescriptionSection(
             title: widget.title,
-            deskripsi: widget.description,
+            description: widget.description,
           ),
           if (_isExpanded)
             Column(
@@ -161,31 +157,31 @@ class _ExpandableCardState extends State<ExpandableCard> {
               ExpandCollapseButton(
                 isExpanded: _isExpanded,
                 onPressed: _toggleSection,
-                buttonText: _isExpanded ? widget.textButtonActionSecond : widget.textButtonActionFirst,
-                textColor: widget.button1TextColor,
-                buttonBorderRadius: widget.button1BorderRadius,
+                buttonText: _isExpanded ? widget.expandedButtonText : widget.collapsedButtonText,
+                textColor: widget.expandCollapseButtonTextColor,
+                buttonBorderRadius: widget.expandCollapseButtonBorderRadius,
               ),
               Padding(
                 padding: const EdgeInsets.only(right: 16, top: 10),
                 child: ElevatedButton(
-                  onPressed: widget.onPressedButton2,
+                  onPressed: widget.onActionButtonPressed,
                   style: ButtonStyle(
                     backgroundColor: WidgetStateProperty.all<Color>(
-                      widget.button2Color ?? Colors.blue,
+                      widget.actionButtonColor ?? Colors.blue,
                     ),
                     elevation: WidgetStateProperty.all<double>(
-                      widget.button2Elevation ?? 0,
+                      widget.actionButtonElevation ?? 0,
                     ),
                     shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(
-                          widget.button2BorderRadius ?? 0,
+                          widget.actionButtonBorderRadius ?? 0,
                         ),
                       ),
                     ),
                   ),
                   child: Text(
-                    widget.button2Value ?? '',
+                    widget.actionButtonText ?? '',
                     style: const TextStyle(color: Colors.white),
                   ),
                 ),
