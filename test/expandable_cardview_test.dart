@@ -11,14 +11,13 @@ void main() {
       MaterialApp(
         home: Scaffold(
           body: ExpandableCard(
-            textButtonActionFirst: 'Close',
-            textButtonActionSecond: 'Details',
+            collapsedButtonText: 'Details',
+            expandedButtonText: 'Close',
             title: 'Test Title',
             description: 'Test Description',
-            button1Value: 'Button 1',
-            button2Value: 'Button 2',
-            onPressedButton2: () {
-              // Add onPressedButton2 behavior here
+            actionButtonText: 'Button 2',
+            onActionButtonPressed: () {
+              // Add onActionButtonPressed behavior here
               print('Button 2 pressed');
             },
             sectionRowCount: 2,
